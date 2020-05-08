@@ -30,6 +30,7 @@ From: archlinux
     pacman -Syu --noconfirm git
     pacman -Syu --noconfirm --needed base-devel
     pacman -Syu --noconfirm jdk8-openjdk
+    pacman -Syu --noconfirm xorg-server-xvfb libxrender libxtst libxi jre-openjdk
 
     # install nowellpack
     mkdir -p /opt
