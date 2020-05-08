@@ -5,8 +5,9 @@ From: archlinux
     echo "Nowellpack"
 
 %environment
-    export PATH="/opt/nowellpack/build/install/nowellpack/bin:$PATH"
-    export JAVA_HOME=""
+    PATH="/opt/nowellpack/build/install/nowellpack/bin:$PATH"
+    export PATH
+    unset JAVA_HOME
 
 %post
     echo "Nowellpack"
