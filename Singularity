@@ -6,6 +6,7 @@ From: archlinux
 
 %environment
     export PATH="/opt/nowellpack/build/install/nowellpack/bin:$PATH"
+    export JAVA_HOME=""
 
 %post
     echo "Nowellpack"
@@ -27,7 +28,6 @@ From: archlinux
     # install dependencies
     pacman -Syu --noconfirm git
     pacman -Syu --noconfirm --needed base-devel
-    pacman -Syu --noconfirm wget
     pacman -Syu --noconfirm jdk8-openjdk
 
     # install nowellpack
