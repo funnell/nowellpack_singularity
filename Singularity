@@ -7,7 +7,8 @@ From: archlinux
 %environment
     PATH="/opt/nowellpack/build/install/nowellpack/bin:$PATH"
     export PATH
-    unset JAVA_HOME
+    JAVA_HOME="/usr/lib/jvm/default-runtime"
+    export JAVA_HOME
 
 %post
     echo "Nowellpack"
